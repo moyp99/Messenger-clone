@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./App.css";
+import "./styles/app.css";
 import { FormControl, Input } from "@material-ui/core";
-import Message from "./Message";
-import db from "./firebase";
+import Message from "./components/Message";
+import db from "./utils/firebase";
 import firebase from "firebase";
 import FlipMove from "react-flip-move";
 import SendIcon from "@material-ui/icons/Send";
