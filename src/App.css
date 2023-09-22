@@ -1,10 +1,24 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  height: 100vh;
+}
+
+.header {
+  flex: 0 1 200px;  
+}
+
+.messages__container{
+  flex: 1;
+  overflow-y: scroll; 
+  height: fit-content; 
 }
 
 .app__form{
   padding: 20px;
-  position: fixed;
+  position: relative;
   bottom: 0;
   z-index:1;
   background-color: #e9e9eb;
@@ -30,6 +44,7 @@
 .app__logo{
   margin-top: 20px;
   width: 100px;
+  align-self: center;
 }
 
 
